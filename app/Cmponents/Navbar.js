@@ -6,7 +6,7 @@ import Project from './Project';
 
 function Navbar() {
   return (
-    <nav className="bg-slate shadow-lg p-4">
+    <nav className="bg-slate shadow-lg p-4 md:p-8 md:bg-">
         
       {/* Desktop Layout */}
       <div className="hidden md:flex justify-end gap-8  items-end">
