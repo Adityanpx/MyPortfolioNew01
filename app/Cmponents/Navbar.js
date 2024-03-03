@@ -44,9 +44,7 @@ function Navbar() {
         {/* You can use conditional rendering to show/hide components */}
         {/* For simplicity, I'm using placeholders; replace them with your components */}
         <div className="flex flex-col items-end">
-            <About/>
-            <Project/>
-            <Contact/>
+            
 
           
         </div>
