@@ -6,20 +6,42 @@ import Project from './Project';
 
 function Navbar() {
   return (
-    <nav className="bg-slate shadow-lg p-4 md:p-8 md:bg-">
+    <nav className="bg-slate shadow-lg p-4 md:p-4 md:bg-">
+
+      {/* Desktop layout */}
+      <div>
+      <div className=' hidden md:flex gap-1 '>
+        <img src='eagle 2.jpeg'
+           className='h-16   '
+           />
+        <h1 className='mt-4 text-3xl font-serif' >
+           
+           Adityanpx </h1>
+           </div>
         
       {/* Desktop Layout */}
-      <div className="hidden md:flex justify-end gap-8  items-end">
+      <div className="hidden md:flex justify-end   gap-8  items-end">
+      
         <About/>
         <Contact/>
         <Project/>
+
+        
       
         
+      </div>
       </div>
 
       {/* Mobile Layout */}
       <div className="md:hidden flex justify-between ">
-        <h1 className=''> Adityanpx</h1>
+        <div className='flex gap-1 '>
+        <img src='eagle 2.jpeg'
+           className='h-16   '
+           />
+        <h1 className='mt-4 text-2xl font-serif' >
+           
+           Adityanpx </h1>
+           </div>
         {/* Add a button to toggle the mobile menu */}
         <button className="text-black  ">
           <svg
