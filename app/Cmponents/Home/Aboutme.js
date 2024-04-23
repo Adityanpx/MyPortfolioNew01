@@ -11,7 +11,7 @@ function Aboutme() {
                 <div>
                 <p className='text-xl p-2 font-serif border-b-0 text-center border-black'> Education</p> 
                 
-                <div className='mx-10 px-7 border-2   border-red-400 rounded shadow-md'>
+                <div className='md:mx-10 px-7 border-2   border-red-400 rounded shadow-md'>
                     <h1 className='text-xl mt-2 font-semibold animate-pulse '>Bachelor in Data Science</h1>
                     <h2 className='text-sm'>Symbiosis skiils and professional university , pune</h2>
                     <h3 className=' mb-3 font-bold text-yellow-500'> Year 2022 - Year 2025 </h3>
@@ -19,7 +19,7 @@ function Aboutme() {
                 </div>
                <div>
                 <p className='text-xl  p-2 font-serif border-b-0 text-center border-black'> Experience</p>
-                <div className='mx-10 px-7 border-2   border-red-400 rounded shadow-md'>
+                <div className='md:mx-10 px-7 border-2   border-red-400 rounded shadow-md'>
                     <h1 className='text-xl mt-2 font-semibold '>Fullstach developer intern</h1>
                     <h2 className='text-sm'> A3M NextGen , Pune </h2>
                     <h3 className=' mb-3 font-bold text-yellow-500'> june 2023 - Aug 2023  </h3>

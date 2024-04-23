@@ -8,7 +8,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Contactme from './Cmponents/Home/Contactme'
 import Footer from './Cmponents/Home/Footer'
-import Contactadd from './Cmponents/Contactadd'
 
 
 // Initialize AOS
@@ -18,13 +17,14 @@ import Contactadd from './Cmponents/Contactadd'
 function index() {
   return (
     
-    <div>
+    <div >
+      
       <Navbar/>
       <Hero/>
       <Project/>
       <Aboutme/>
       <Contactme/>
-      <Contactadd/>
+      
       <Footer/>
     </div>
   )

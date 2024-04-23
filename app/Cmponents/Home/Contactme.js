@@ -5,7 +5,7 @@ function ContactMe() {
     <div>
       <p className='text-2xl md:text-3xl ml-6 p-3 font-serif border-b-1 border-black md:border-b-2 border-b-4 cursor-pointer'> Let's Connect </p>
 
-      <div className="max-w-md mx-auto mt-5 mb-6 p-6 bg-white shadow-lg border-violet-400 border-4 rounded-lg">
+      <div className="max-w-md mx-auto mt-5 mb-6 p-6 bg-white shadow-lg   rounded-lg">
         <form className='p-6'>
           <div className="mb-4 ">
             <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name:</label>

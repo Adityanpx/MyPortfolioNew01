@@ -4,7 +4,7 @@ function Hero() {
     return (
         <div>
             {/* for mobile */}
-            <div className=' bg-gradient-to-tr from-green-500 via-violet-400 to-red-400 p-6 flex justify-center items-center md:justify-start '>
+            <div className=' bg-gradient-to-tr from-green-500 via-blue-300 to-blue-500 p-6 flex justify-center items-center md:justify-start '>
                 <div className=" md:ml-14 p-6 md:p-16 rounded-lg shadow-lg w-80 md:w-auto md:h-98  ">
                         <img src='https://i.postimg.cc/QMbWxtND/sf-yuxfqicoylacr4k7rq-1693-1696671965744-out-compressed.png'
                           className='md:hidden'
@@ -17,7 +17,7 @@ function Hero() {
 
                     <p className="text-white md:mt-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                     <div className="mt-4 ">
-                        <div className='flex   transition ease-linear delay-300 hover:translate-y-1 justify-center md:justify-start gap-6 text-white'>
+                        <div className='flex   transition  delay-300 duration-700 ease-in-out justify-center md:justify-start gap-6 text-white'>
                         <a href='https://github.com/Adityanpx'
                         className="  text-3xl hover:scale-125 ">
                              <FaGithub/>
