@@ -1,6 +1,4 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* In your global CSS file */
-@import 'aos/dist/aos.css';
+  @tailwind components;
+  @tailwind utilities;
+  

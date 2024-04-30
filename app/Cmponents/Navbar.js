@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,39 +26,39 @@ function Navbar() {
     };
   }, [isMobileMenuOpen]);
 
+  const handleDownloadResume = () => {
+    // Construct the URL to the resume file
+    const resumeUrl = "/Resume1.pdf"; // Update this with the correct path
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.download = "Resume1.pdf"; // Set the filename for download
+    link.click();
+  };
+
   return (
-    <nav className="bg-transparent shadow-lg p-4 md:p-4">
+    <nav className="shadow-lg p-4 md:p-4">
       {/* Desktop layout */}
       <div className="flex justify-between">
         <div className="hidden md:flex gap-1">
-          <img src="eagle 2.jpeg" className="h-16" alt="Logo" />
-          <h1 className="mt-4 text-3xl font-serif">Adityanpx</h1>
+          
+          <h1 className="mt-4 md:ml-4 text-3xl font-serif">Aditya Gavali </h1>
         </div>
-
-        {/* Desktop Layout */}
-        <div className="hidden md:flex justify-end gap-8 items-end mr-24">
-          <div className="flex mt-7 justify-gap-16 rounded-md h-10">
-            <button className="text-white md:text-lg hover:translate-y-1 hover:scale-100 bg-black duration-500 font-semibold rounded-lg w-28 hover:bg-orange-400">
-              {" "}
-              Resume
-            </button>
-            <button className="text-white md:text-lg hover:translate-y-1 hover:scale-100 bg-black duration-500 font-semibold rounded-lg w-28 hover:bg-orange-400">
-              {" "}
-              Hire Me
-            </button>
-            <button className="text-white md:text-lg hover:translate-y-1 hover:scale-100 bg-black duration-500 font-semibold rounded-lg w-28 hover:bg-orange-400">
-              {" "}
-              Hire Me
-            </button>
-          </div>
+        <div className=" hidden md:flex gap-8 mr-8 gap- mt-3 ">
+          {/* Attach the download resume function to the button */}
+          <Button variant="ghost" onClick={handleDownloadResume}>
+            Download Resume
+          </Button>
+          <Button variant="ghost">About Me</Button>
+          <Button variant="ghost">Projects</Button>
         </div>
       </div>
 
       {/* Mobile Layout */}
       <div className="md:hidden flex justify-between">
         <div className="flex gap-1">
-          <img src="eagle 2.jpeg" className="h-16" alt="Logo" />
-          <h1 className="mt-4 text-2xl font-serif">Adityanpx</h1>
+          <h1 className="mt-4 ml-10 text-2xl font-serif">Aditya Gavali </h1>
         </div>
         {/* Add a button to toggle the mobile menu */}
         <button
@@ -72,7 +73,12 @@ function Navbar() {
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path strokeLinecap="square" strokeLinejoin="bevel" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+            <path
+              strokeLinecap="square"
+              strokeLinejoin="bevel"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
           </svg>
         </button>
       </div>
@@ -86,23 +92,20 @@ function Navbar() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 200, damping: 20 }}
-            className="md:hidden absolute top-0 right-0 h-full bg-white w-64 z-50"
+            className="md:hidden absolute top-0 right-0 h-full bg-white w-8/12 z-50"
           >
             <ul className="py-4 px-8">
               <li className="mb-4">
-                <a href="#" className="text-gray-800 hover:text-orange-400">
+                {/* Attach the download resume function to the menu item */}
+                <Button variant="ghost" onClick={handleDownloadResume}>
                   Download Resume
-                </a>
+                </Button>
               </li>
-              <li className="mb-4">
-                <a href="#" className="text-gray-800 hover:text-orange-400">
-                  About Me
-                </a>
-              </li>
-              <li className="mb-4">
-                <a href="#" className="text-gray-800 hover:text-orange-400">
-                  Why Me
-                </a>
+              <Button variant="ghost">About Me</Button>
+
+              <li className="mt-4">
+              <Button variant="ghost">Why me</Button>
+
               </li>
             </ul>
           </motion.div>
