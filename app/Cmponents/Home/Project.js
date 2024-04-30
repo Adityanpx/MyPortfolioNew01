@@ -24,7 +24,7 @@ function Project() {
             {clicked ? (
               <a href="https://github.com/Adityanpx/shoe-store" target="_blank" rel="noopener noreferrer">
                 <button className="bg-white text-black px-4 py-2 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300">
-                  <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                  <FontAwesomeIcon icon={faGithub} className="mr-2 " />
                   Get the code
                 </button>
               </a>
