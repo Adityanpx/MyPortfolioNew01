@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
+
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
@@ -38,12 +39,14 @@ function Navbar() {
   };
 
   return (
-    <nav className="shadow-lg p-4 md:p-4">
+    <nav className=" md:mt-4 shadow-lg md:h-28 p-4 md:p-4">
       {/* Desktop layout */}
       <div className="flex justify-between">
-        <div className="hidden md:flex gap-1">
+        <div className="hidden    md:flex gap-1">
           
-          <h1 className="mt-4 md:ml-4 text-3xl font-serif">Aditya Gavali </h1>
+          <h1 className="mt-4 md:ml-4 text-4xl font-bold font-serif">Aditya Gavali </h1>
+          <h1 className="  mt-7 ml-4 border-b-2 border-black  text-xl  font-serif"> fullstack developer </h1>
+
         </div>
         <div className=" hidden md:flex gap-8 mr-8 gap- mt-3 ">
           {/* Attach the download resume function to the button */}
@@ -56,10 +59,15 @@ function Navbar() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="md:hidden flex justify-between">
-        <div className="flex gap-1">
-          <h1 className="mt-4 ml-10 text-2xl font-serif">Aditya Gavali </h1>
-        </div>
+      <div className="md:hidden h-18 flex justify-between">
+        
+      <div className="gap-1 ml-16 ">
+  <div className="grid">
+    <h1 className="mt-2 text-3xl font-bold font-serif">Aditya Gavali</h1>
+    <h1 className="text-xl ml-4 border-b-2 border-black font-serif">Fullstack Developer</h1>
+  </div>
+</div>
+
         {/* Add a button to toggle the mobile menu */}
         <button
           ref={toggleButtonRef}

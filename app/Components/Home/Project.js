@@ -18,19 +18,19 @@ function Project() {
         <div className="relative shadow-md p-6 hover:transform transition-transform hover:scale-105">
           <a className="flex justify-center font-bold"> Shoe Store</a>
           <video src="Shoe store - Frontend .mov" className="h-44" />
-          <p>hii</p>
+          <p>  </p>
           <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
             {clicked ? (
               <a href="https://github.com/Adityanpx/shoe-store" target="_blank" rel="noopener noreferrer">
                 <button className="bg-white text-black px-4 py-2 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300">
                   <FontAwesomeIcon icon={faGithub} className="mr-2 " />
-                  Get the code
+                  Get the 
                 </button>
               </a>
             ) : (
               <button onClick={handleClick} className="bg-white text-black px-4 py-2 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300">
-                <FontAwesomeIcon icon={faGithub} className="mr-2" />
+                <FontAwesomeIcon icon={faGithub} className="mr-2 " />
                 Get the code
               </button>
             )}
@@ -42,14 +42,14 @@ function Project() {
         <div className="relative shadow-md p-6 hover:transform transition-transform hover:scale-105">
           <a className="flex justify-center font-bold"> Car on Rental</a>
           <img src="car on rental.png" className="h-44" />
-          <p>hii</p>
+          <p>   </p>
           <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
             {clicked ? (
               <a href="https://github.com/Adityanpx/CarOnRent.web" target="_blank" rel="noopener noreferrer">
                 <button className="bg-white text-black px-4 py-2 rounded-lg border border-black hover:bg-black hover:text-white transition duration-300">
-                  <FontAwesomeIcon icon={faGithub} className="mr-2" />
-                  Get the code
+                  <FontAwesomeIcon icon={faGithub} className="mr-2 h-10" />
+                  Get the cod
                 </button>
               </a>
             ) : (
@@ -62,9 +62,9 @@ function Project() {
         </div>
 
         <div className="relative shadow-md p-6 hover:transform transition-transform hover:scale-105">
-          <a className="flex justify-center font-bold">UBER clone</a>
-          <img src="https://i.postimg.cc/QMbWxtND/sf-yuxfqicoylacr4k7rq-1693-1696671965744-out-compressed.png" className="h-44" />
-          <p>hii</p>
+          <a className="flex justify-center font-bold">UBER clone (working on it )</a>
+          <img src="" alt="UBER clone" className="h-44" />
+          <p> </p>
           <div className="absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-50 transition-opacity duration-300"></div>
           <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
             {clicked ? (

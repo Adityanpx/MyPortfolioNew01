@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from './Cmponents/Navbar'
-import Hero from './Cmponents/Home/Hero'
-import Project from './Cmponents/Home/Project'
-import Aboutme from './Cmponents/Home/Aboutme'
+import Navbar from './Components/Navbar'
+import Hero from './Components/Home/Hero'
+import Project from './Components/Home/Project'
+import Aboutme from './Components/Home/Aboutme'
 // Import AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Contactme from './Cmponents/Home/Contactme'
-import Footer from './Cmponents/Home/Footer'
+import Contactme from './Components/Home/Contactme'
+import Footer from './Components/Home/Footer'
 
 
 // Initialize AOS
