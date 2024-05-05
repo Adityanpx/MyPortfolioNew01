@@ -3,7 +3,7 @@ import React from 'react';
 function ContactMe() {
   return (
     <div>
-      <p className='text-2xl md:text-3xl ml-6 p-3 font-serif border-b-1 border-black md:border-b-2 border-b-4 cursor-pointer'> Let's Connect </p>
+      {/* <p className='text-2xl md:text-3xl ml-6 p-3 font-serif border-b-1 border-black md:border-b-2 border-b-4 cursor-pointer'> Let's Connect </p>
 
       <div className="max-w-md mx-auto mt-5 mb-6 p-6 bg-white shadow-lg   rounded-lg">
         <form className='p-6'>
@@ -30,7 +30,7 @@ function ContactMe() {
 
           <button type="submit" className="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition duration-300">Connect</button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 }

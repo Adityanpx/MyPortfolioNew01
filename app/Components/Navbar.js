@@ -53,8 +53,7 @@ function Navbar() {
           <Button variant="ghost" onClick={handleDownloadResume}>
             Download Resume
           </Button>
-          <Button variant="ghost">About Me</Button>
-          <Button variant="ghost">Projects</Button>
+          
         </div>
       </div>
 
@@ -109,12 +108,8 @@ function Navbar() {
                   Download Resume
                 </Button>
               </li>
-              <Button variant="ghost">About Me</Button>
 
-              <li className="mt-4">
-              <Button variant="ghost">Why me</Button>
-
-              </li>
+              
             </ul>
           </motion.div>
         )}
