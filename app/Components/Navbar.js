@@ -29,12 +29,12 @@ function Navbar() {
 
   const handleDownloadResume = () => {
     // Construct the URL to the resume file
-    const resumeUrl = "/Resume1.pdf"; // Update this with the correct path
+    const resumeUrl = "/AdityaResume.pdf"; // Update this with the correct path
 
     // Create a temporary link element
     const link = document.createElement("a");
     link.href = resumeUrl;
-    link.download = "Resume1.pdf"; // Set the filename for download
+    link.download = "AdityaResume`.pdf"; // Set the filename for download
     link.click();
   };
 
@@ -45,7 +45,7 @@ function Navbar() {
         <div className="hidden    md:flex gap-1">
           
           <h1 className="mt-4 md:ml-4 text-4xl font-bold font-serif">Aditya Gavali </h1>
-          <h1 className="  mt-7 ml-4 border-b-2 border-black  text-xl  font-serif"> fullstack developer </h1>
+          <h1 className="  mt-7 ml-4 border-b-2 border-black  text-xl  font-serif">  </h1>
 
         </div>
         <div className=" hidden md:flex gap-8 mr-8 gap- mt-3 ">
@@ -63,7 +63,6 @@ function Navbar() {
       <div className="gap-1 ml-16 ">
   <div className="grid">
     <h1 className="mt-2 text-3xl font-bold font-serif">Aditya Gavali</h1>
-    <h1 className="text-xl ml-4 border-b-2 border-black font-serif">Fullstack Developer</h1>
   </div>
 </div>
 
