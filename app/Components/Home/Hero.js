@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import { FaGithub, FaTwitter, FaLinkedin, FaArrowDown } from "react-icons/fa";
+import { TypeAnimation } from 'react-type-animation';
+
 
 function Hero() {
   // Function to handle resume download
@@ -14,10 +17,24 @@ function Hero() {
             {" "}
             Hello!{" "}
           </p>
-          <p className="font-serif md:text-4xl text-xl font-bold md:mt-2 ">
-            {" "}
-            I'm Aditya Gavali{" "}
-          </p>
+        
+      <p className="font-serif md:text-4xl text-xl font-bold md:mt-2">
+        <TypeAnimation
+          sequence={[
+            "I'm Aditya Gavali",
+            // Types the text
+            2000, // Waits 1s
+            '', // Deletes the text
+            2000, // Waits 1s
+            "A Fullstach developer" // Types the text again
+          ]}
+          wrapper="span"
+          speed={13}
+          repeat={Infinity}
+        />
+      </p>
+    
+          
           <p className="mt-4 md:mt-6">
           I am a skilled full-stack developer with hands-on experience in creating engaging frontend projects such as online shoe stores and car rental platforms. Currently, I'm developing a React Native Uber clone and a Python- based chatbot, demonstrating my ability to adapt across different technologies. I am a dedicated learner, always eager to explore new technologies to enhance my skills and make valuable contributions to innovative projects.
  {" "}
@@ -63,6 +80,11 @@ function Hero() {
               Scroll down <FaArrowDown className="ml-2 mt-1.5 text-sm" />
             </button> */}
           </div>
+        </div>
+        <div className="grid-rows-2">
+          <img
+          src="me.jpg"
+          />
         </div>
       </div>
     </div>
