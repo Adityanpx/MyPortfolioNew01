@@ -82,9 +82,7 @@ function Hero() {
           </div>
         </div>
         <div className="grid-rows-2">
-          <img
-          src="me.jpg"
-          />
+          
         </div>
       </div>
     </div>
